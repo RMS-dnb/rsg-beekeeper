@@ -24,9 +24,9 @@ Citizen.CreateThread(function()
                 SetEntityAsMissionEntity(beehive, true)
                 PlaceObjectOnGroundProperly(beehive, true)
                 FreezeEntityPosition(beehive, true)
-				Citizen.InvokeNative(0xA10DB07FC234DD12, bees_cloud_group)
-				bees = Citizen.InvokeNative(0xBA32867E86125D3A , bees_cloud_name, v.coords, 0.0, 0.0, 0.0, 1.0, false, false, false, false)
-				spawned = true
+                Citizen.InvokeNative(0xA10DB07FC234DD12, bees_cloud_group)
+                bees = Citizen.InvokeNative(0xBA32867E86125D3A , bees_cloud_name, v.coords, 0.0, 0.0, 0.0, 1.0, false, false, false, false)
+                spawned = true
             end
         end
     end
