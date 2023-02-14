@@ -3,6 +3,7 @@ Config = {}
 -- settings
 Config.Cooldown = 120 -- 3600 -- amount in seconds (3600 = 1hr)
 Config.CheckTime = 30000 -- check hive (in milliseconds / 30000 = 30 sec)
+Config.BeeSting = 10 -- amount of health to take off each sting (currently every 5 seconds)
 
 -- beehive props
 Config.BeeHiveProps = {

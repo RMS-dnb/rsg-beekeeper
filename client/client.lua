@@ -109,3 +109,24 @@ function cooldownTimer()
         end
     end)
 end
+
+---------------------------------------------------------------------------------
+
+--- bee-sting effect
+Citizen.CreateThread(function()
+    while true do
+        Wait(5000)
+        for k,v in pairs(Config.BeeHives) do
+            if IsEntityAtCoord(PlayerPedId(), v.coords, 3.0, 3.0, 3.0, 0, 1, 0) then
+                local ped = PlayerPedId()
+                local health = GetEntityHealth(ped)
+                if health > 0 then 
+                    SetEntityHealth(ped, health - Config.BeeSting)
+                    PlayPain(ped, 9, 1, true, true)
+                end
+            end
+        end
+    end
+end)
+
+---------------------------------------------------------------------------------
