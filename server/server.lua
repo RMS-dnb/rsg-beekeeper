@@ -7,10 +7,12 @@ RegisterNetEvent('rsg-beekeeper::server:givehoney', function()
     local lastname = Player.PlayerData.charinfo.lastname
     local chance = math.random(1,100)
     -- reward (95% chance)
-    if chance <= 95 then -- reward : 1 x honeycomb
+    if chance <= 95 then -- reward : 1 x honeycomb 1 x beeswax
         -- add item honeycomb
         Player.Functions.AddItem('honeycomb', 1)
         TriggerClientEvent("inventory:client:ItemBox", src, RSGCore.Shared.Items['honeycomb'], "add")
+        Player.Functions.AddItem('beeswax', 1)
+        TriggerClientEvent("inventory:client:ItemBox", src, RSGCore.Shared.Items['beeswax'], "add")
         -- remove item 
         Player.Functions.RemoveItem('honeyframe', 1)
         TriggerClientEvent("inventory:client:ItemBox", src, RSGCore.Shared.Items['honeyframe'], "remove")
@@ -18,10 +20,12 @@ RegisterNetEvent('rsg-beekeeper::server:givehoney', function()
         TriggerEvent('rsg-log:server:CreateLog', 'beekeeper', 'Honey Collected', 'yellow', firstname..' '..lastname..' collected 1 honeycomb')
     end
     -- reward (5% chance)
-    if chance > 95 then -- reward : 2 x honeycomb
+    if chance > 95 then -- reward : 2 x honeycomb and 2 x beeswax
         -- add item honeycomb
         Player.Functions.AddItem('honeycomb', 2)
         TriggerClientEvent("inventory:client:ItemBox", src, RSGCore.Shared.Items['honeycomb'], "add")
+        Player.Functions.AddItem('beeswax', 2)
+        TriggerClientEvent("inventory:client:ItemBox", src, RSGCore.Shared.Items['beeswax'], "add")
         -- remove item 
         Player.Functions.RemoveItem('honeyframe', 1)
         TriggerClientEvent("inventory:client:ItemBox", src, RSGCore.Shared.Items['honeyframe'], "remove")
