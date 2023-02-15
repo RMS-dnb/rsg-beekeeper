@@ -17,16 +17,15 @@ shared_scripts {
     'config.lua'
 }
 
-dependency 'rsg-core'
+dependencies {
+    'rsg-core',
+    'rsg-target',
+}
 
 files {
     'stream/bee_house_gk_ytyp.ytyp'
 }
 
 data_file 'DLC_ITYP_REQUEST' 'stream/bee_house_gk_ytyp.ytyp'
-
-escrow_ignore {
-    'stream/*/*.ydr'
-}
 
 lua54 'yes'

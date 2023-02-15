@@ -105,7 +105,7 @@ function cooldownTimer()
         while cooldownSecondsRemaining > 0 do
             Wait(1000)
             cooldownSecondsRemaining = cooldownSecondsRemaining - 1
-            print(cooldownSecondsRemaining)
+            --print(cooldownSecondsRemaining)
         end
     end)
 end
