@@ -1,0 +1,7 @@
+
+    -- beekeeper
+    ['honeyframe']   = {['name'] = 'honeyframe',   ['label'] = 'Honey Frame',   ['weight'] = 100, ['type'] = 'item', ['image'] = 'honeyframe.png',   ['unique'] = false, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'Used for making honey'},
+    ['honeycomb']    = {['name'] = 'honeycomb',    ['label'] = 'Honeycomb',     ['weight'] = 300, ['type'] = 'item', ['image'] = 'honeycomb.png',    ['unique'] = false, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'Used for making honey'},
+    ['honeypot']     = {['name'] = 'honeypot',     ['label'] = 'Honey Pot',     ['weight'] = 300, ['type'] = 'item', ['image'] = 'honeypot.png',     ['unique'] = false, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'Used for making honey'},
+    ['beeswax']      = {['name'] = 'beeswax',      ['label'] = 'Bees Wax',      ['weight'] = 100, ['type'] = 'item', ['image'] = 'beeswax.png',      ['unique'] = false, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'product from beehive'},
+    ['honey']      = {['name'] = 'honey',      ['label'] = 'Honey',      ['weight'] = 100, ['type'] = 'item', ['image'] = 'honey.png',      ['unique'] = false, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'product from beehive'},
