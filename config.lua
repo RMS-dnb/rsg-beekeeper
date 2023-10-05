@@ -48,42 +48,42 @@ Config.Keybind = 'J'
 Config.beekeeperCraftingPoint = {
 
     {   -- valentine
-        name = 'beekeeper Crafting',
+        name = 'Beekeeper Crafting',
         location = 'valbeekeeper',
         coords = vector3(-471.5865, 860.32104, 126.72114),
         job = 'valbeekeeper',
         showblip = true
     },
     {   -- strawberry
-        name = 'beekeeper Crafting',
+        name = 'Beekeeper Crafting',
         location = 'strawbeekeeper',
         coords = vector3(-1642.77, -335.851, 172.22273),
         job = 'strawbeekeeper',
         showblip = true
     },
     {   -- blackwater
-        name = 'beekeeper Crafting',
+        name = 'Beekeeper Crafting',
         location = 'blackbeekeeper',
         coords = vector3(-871.2145, -1083.776, 58.306953),
         job = 'blackbeekeeper',
         showblip = true
     },
     {   -- mcfarlanes ranch
-        name = 'beekeeper Crafting',
+        name = 'Beekeeper Crafting',
         location = 'mcfarbeekeeper',
         coords = vector3(-2300.35, -2385.453, 63.183452),
         job = 'mcfarbeekeeper',
         showblip = true
     },
     {   -- rhodes
-        name = 'beekeeper Crafting',
+        name = 'Beekeeper Crafting',
         location = 'rhodesbeekeeper',
         coords = vector3(1397.8061, -1117.391, 75.270698),
         job = 'rhodesbeekeeper',
         showblip = true
     },
     {   -- braitewaithe
-        name = 'beekeeper Crafting',
+        name = 'Beekeeper Crafting',
         location = 'braithbeekeeper',
         coords = vector3(857.7091, -1889.626, 44.464122),
         job = 'braithbeekeeper',
@@ -97,42 +97,42 @@ Config.beekeeperShops = {
 
     {
         shopid = 'valbeekeepershop',
-        shopname = 'Valentine beekeeper Shop',
+        shopname = 'Valentine Beekeeper Shop',
         coords = vector3(-468.9227, 863.61608, 126.86179),
         jobaccess = 'valbeekeeper',
         showblip = true
     },
     {
         shopid = 'strawbeekeepershop',
-        shopname = 'Strawberry beekeeper Shop',
+        shopname = 'Strawberry Beekeeper Shop',
         coords = vector3(-1642.487, -339.7031, 172.73971),
         jobaccess = 'strawbeekeeper',
         showblip = true
     },
     {
         shopid = 'blackbeekeepershop',
-        shopname = 'Blackwater beekeeper Shop',
+        shopname = 'Blackwater Beekeeper Shop',
         coords = vector3(-877.1653, -1087.674, 58.898277),
         jobaccess = 'blackbeekeeper',
         showblip = true
     },
     {
         shopid = 'mcfarbeekeepershop',
-        shopname = 'Mcfarlanes beekeeper Shop',
+        shopname = 'Mcfarlanes Beekeeper Shop',
         coords = vector3(-2301.846, -2382.233, 63.185764),
         jobaccess = 'mcfarbeekeeper',
         showblip = true
     },
     {
         shopid = 'rhodesbeekeepershop',
-        shopname = 'Rhodes beekeeper Shop',
+        shopname = 'Rhodes Beekeeper Shop',
         coords = vector3(1395.9558, -1115.676, 75.237609),
         jobaccess = 'rhodesbeekeeper',
         showblip = true
     },
     {
         shopid = 'braithbeekeepershop',
-        shopname = 'Braithwaite beekeeper Shop',
+        shopname = 'Braithwaite Beekeeper Shop',
         coords = vector3(855.95263, -1893.109, 44.428947),
         jobaccess = 'braithbeekeeper',
         showblip = true
@@ -156,7 +156,5 @@ Config.beekeeperCrafting = {
         receive = "honey",
         giveamount = 5
     },
-
-
 
 }

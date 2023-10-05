@@ -17,7 +17,12 @@ CREATE TABLE IF NOT EXISTS `beekeeper_shop` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 INSERT INTO `beekeeper_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VALUES
-('valbeekeepershop', 'valbeekeeper', 'Valentine beekeeper Shop', 0);
+('valbeekeepershop', 'valbeekeeper', 'Valentine Beekeeper Shop', 0),
+('strawbeekeepershop', 'strawbeekeeper', 'Strawberry Beekeeper Shop', 0),
+('blackbeekeepershop', 'blackbeekeeper', 'Blackwater Beekeeper Shop', 0),
+('mcfarbeekeepershop', 'mcfarbeekeeper', 'Mcfarlanes Beekeeper Shop', 0),
+('rhodesbeekeepershop', 'rhodesbeekeeper', 'Rhodes Beekeeper Shop', 0),
+('braithbeekeepershop', 'braithbeekeeper', 'Braithwaite Beekeeper Shop', 0);
 
 DROP TABLE IF EXISTS `beekeepershop_stock`;
 CREATE TABLE `beekeepershop_stock` (
