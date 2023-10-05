@@ -7,7 +7,7 @@ game 'rdr3'
 
 author 'RexShack#3041 & RMS_dnb'
 description 'rsg-beekeeper'
-version '1.0.2'
+version '1.0.3'
 
 shared_scripts {
     '@ox_lib/init.lua',
