@@ -119,7 +119,7 @@ RegisterNetEvent("rsg-beekeepershop:client:Inv", function(store_inventory, data)
 end)
 
 -------------------------------------------------------------------------------------------
--- weaponshop refill
+-- beekeepershop refill
 -------------------------------------------------------------------------------------------
 RegisterNetEvent("rsg-beekeepershop:client:InvReFull", function()
     RSGCore.Functions.TriggerCallback('rsg-beekeepershop:server:Stock', function(result)
@@ -170,7 +170,7 @@ RegisterNetEvent("rsg-beekeepershop:client:InvReFull", function()
 end)
 
 -------------------------------------------------------------------------------------------
--- weaponshop add items from inventory
+-- beekeeper shop add items from inventory
 -------------------------------------------------------------------------------------------
 RegisterNetEvent('rsg-beekeepershop:client:InvReFillInput', function(data)
     local item = data.item
@@ -206,7 +206,7 @@ RegisterNetEvent('rsg-beekeepershop:client:InvReFillInput', function(data)
 end)
 
 -------------------------------------------------------------------------------------------
--- buy weaponshop items
+-- buy beekeeper shop items
 -------------------------------------------------------------------------------------------
 RegisterNetEvent('rsg-beekeepershop:client:InvInput', function(data)
     local name = data.items
@@ -233,7 +233,7 @@ RegisterNetEvent('rsg-beekeepershop:client:InvInput', function(data)
 end)
 
 -------------------------------------------------------------------------------------------
--- weaponshop money
+-- beekeeper money
 -------------------------------------------------------------------------------------------
 RegisterNetEvent("rsg-beekeepershop:client:CheckMoney", function()
     RSGCore.Functions.TriggerCallback('rsg-beekeepershop:server:GetMoney', function(checkmoney)
@@ -260,7 +260,7 @@ RegisterNetEvent("rsg-beekeepershop:client:CheckMoney", function()
 end)
 
 -------------------------------------------------------------------------------------------
--- weaponshop withdraw money
+-- beekeeper shop withdraw money
 -------------------------------------------------------------------------------------------
 RegisterNetEvent('rsg-beekeepershop:client:Withdraw', function(checkmoney)
     local money = checkmoney.money
