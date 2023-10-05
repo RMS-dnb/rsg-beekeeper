@@ -4,7 +4,7 @@
 - github : https://github.com/Rexshack-RedM
 
 # Authors
-- Rexshack & RMS
+- RexShack#3041 & RMS_dnb
 
 # Dependancies
 - rsg-core
