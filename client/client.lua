@@ -208,6 +208,7 @@ RegisterNetEvent('rsg-beekeeper:client:craftitem', function(title, category, ing
 
         -- Request the animation dictionary
         RSGCore.Functions.RequestAnimDict('script_common@shared_scenarios@kneel@mourn@female@a@base')
+        LocalPlayer.state:set("inv_busy", true, true)
 
         -- Start the animation
         TaskPlayAnim(ped, "script_common@shared_scenarios@kneel@mourn@female@a@base", "base", 8.0, -8.0, -1, 1, 0, false, false, false)
@@ -235,6 +236,7 @@ RegisterNetEvent('rsg-beekeeper:client:craftitem', function(title, category, ing
 
             -- Notify the player that their item is now available
             RSGCore.Functions.Notify(title .. ' ' .. ' is now available to fill up in the shop.', 'success')
+            LocalPlayer.state:set("inv_busy", false, true)
 
             PlaySoundFrontend("SELECT", "RDRO_Character_Creator_Sounds", true, 0)
 
@@ -308,6 +310,7 @@ AddEventHandler('rsg-beekeeper:client:checkhive', function()
 
             -- Request the animation dictionary
             RSGCore.Functions.RequestAnimDict('script_common@shared_scenarios@kneel@mourn@female@a@base')
+            LocalPlayer.state:set("inv_busy", true, true)
 
             -- Start the animation
             TaskPlayAnim(ped, "script_common@shared_scenarios@kneel@mourn@female@a@base", "base", 8.0, -8.0, -1, 1, 0, false, false, false)
@@ -338,6 +341,7 @@ AddEventHandler('rsg-beekeeper:client:checkhive', function()
 
                 -- Trigger your server event or other logic here
                 TriggerServerEvent('rsg-beekeeper::server:givehoney')
+                LocalPlayer.state:set("inv_busy", false, true)
                 PlaySoundFrontend("SELECT", "RDRO_Character_Creator_Sounds", true, 0)
 
                 -- Cooldown logic here
